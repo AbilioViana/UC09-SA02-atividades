@@ -1,56 +1,129 @@
 *{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
 }
-
 header{
-
-width: 100%;
 background-color: #02375E;
+
+}
+
+.nav-bar{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo{
+
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
 display: flex;
-justify-content: space-around;
-align-content: center;
-padding: 25px 0px;
-
-}
-.logo-img{
-
-    width: auto;
-
+justify-content: center;
+list-style: none;
 
 }
 
-.containerlogo{
+.nav-item{
 
-display: flex;
-align-items: center;
-
+    margin: 0px 15px;
 }
 
-.containerbarrabusca {
- 
-  }
+  
+    
 
-.menu li{
+.nav-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff
 
-    display: inline-block;
-    margin: 10px;
-    color: white;
+   }
 
-}
+   .login-button button {
 
-.menu li a{
+    border: none;
+    color: rgb(17, 16, 17);
+    background-color: wheat;
+    padding: 10px 15px;
+    border-radius: 5px;
+   }
 
-        font-size: 25px;
-        text-decoration: none;
-        color: white;
-        margin-top: 50%;
-        font-family: sans-serif;
+   .login-button button a {
 
-}
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+   }
 
-.conteinerbanner{
+   .mobile-menu-icon {
+    display: none;
+   } 
+   .mobile-menu {
+    display: none;
+   }
+   
+   @media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem;
+    }
+    .nav-item{
+        display: none;
+    }
+
+    .login-button{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button{
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button{
+        width: 100%;
+    }
+
+    .open{
+        display: block;
+    }
+
+
+   }
+
+
+
+
+
+
+   .conteinerbanner{
 
     background-image: url(../img/banner.png);
     background-repeat: no-repeat;
@@ -159,13 +232,13 @@ align-items: center;
 
 .secpromo{
 
-    width: 100%;
+     width: 100%;
     display: flex;
     justify-content: space-around;
     align-content: justify;
     padding: 25px 0px;
     background-color: #02375E;
-    border: 5px solid black;
+    border: 10px solid black;
 
 
 }
@@ -176,6 +249,7 @@ align-items: center;
     margin: 10px;
     color: white;
     justify-content: space-around;
+   
 
 
 
@@ -197,8 +271,7 @@ footer{
 
     width: 100%;
     display: flex ;
-    justify-content: space-around;
-    align-content: justify;
+    justify-content: center;
     padding: 25px 0px;
     background-color: #02375E;
     border: 5px solid black;
