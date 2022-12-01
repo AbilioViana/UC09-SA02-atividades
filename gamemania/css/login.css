@@ -113,7 +113,9 @@ body {
 
     text-align: center;
 
-    font-size: 12px;
+    font-size: 15px;
+
+    font-family: sans-serif;
 
     opacity: 0.8;
 
@@ -125,6 +127,6 @@ body {
 
 footer{
 
-
+    
     color: white;
 }

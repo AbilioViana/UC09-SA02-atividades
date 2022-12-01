@@ -42,7 +42,7 @@
 
             <div class="card-footer">
 
-                <input type="submit" value="login" class="submit">
+                <input type="submit"  onclick="logar">
 
                 <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
                 <a href="./index.html">Home</a>
@@ -52,10 +52,24 @@
         </form>
 
     </div>
+<script>
+function logar(){
+    var login = document.getElementById('usuario').value;
+    var senha = document.getElementById('password').value;
 
+    if(login =="admin" && senha == "admin"){
+        alert("Bem Vindo");
+        
+    }else{
+
+            alert("Usuário ou senha incorretos");
+
+    }
+}
+
+</script>
     
         
-    
 </body>
     
 
